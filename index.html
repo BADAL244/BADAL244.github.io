@@ -4,130 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Badal Kumar | Robotics & AI Engineer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
         }
         header {
-            background: #333;
+            background: #343a40;
             color: #fff;
             padding: 20px 0;
-            text-align: center;
         }
         header h1 {
             margin: 0;
             font-size: 2.5rem;
         }
-        header p {
-            font-size: 1.2rem;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px 0;
-        }
-        h2 {
-            color: #333;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            margin: 10px 0;
-        }
-        a {
-            color: #0099ff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
         footer {
-            background: #333;
+            background: #343a40;
             color: #fff;
             text-align: center;
             padding: 10px 0;
             margin-top: 20px;
         }
+        .btn-back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+        }
     </style>
 </head>
 <body>
-    <header>
+    <header class="text-center">
         <h1>Badal Kumar</h1>
         <p>Robotics & AI Engineer</p>
     </header>
-    <div class="container">
-        <section id="contact">
+    <div class="container py-4">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mb-4">
             <h2>Contact</h2>
-            <p>Phone: <a href="tel:+6584350762">+65 8435 0762</a></p>
-            <p>Email: <a href="mailto:armanibadal@gmail.com">armanibadal@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/kumarbadal" target="_blank">www.linkedin.com/in/kumarbadal</a></p>
+            <ul class="list-unstyled">
+                <li><strong>Phone:</strong> <a href="tel:+6584350762">+65 8435 0762</a></li>
+                <li><strong>Email:</strong> <a href="mailto:armanibadal@gmail.com">armanibadal@gmail.com</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kumarbadal" target="_blank">View Profile</a></li>
+            </ul>
         </section>
-        <section id="skills">
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-4">
             <h2>Top Skills</h2>
-            <ul>
-                <li>Data Structures</li>
-                <li>Control Systems Design</li>
-                <li>Machine Learning</li>
-            </ul>
+            <div class="row">
+                <div class="col-md-4"><span class="badge bg-primary">Data Structures</span></div>
+                <div class="col-md-4"><span class="badge bg-secondary">Control Systems Design</span></div>
+                <div class="col-md-4"><span class="badge bg-success">Machine Learning</span></div>
+            </div>
         </section>
-        <section id="languages">
-            <h2>Languages</h2>
-            <ul>
-                <li>English (Professional Working)</li>
-                <li>Hindi (Native or Bilingual)</li>
-                <li>Bengali (Elementary)</li>
-            </ul>
-        </section>
-        <section id="certifications">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Robotics Software Engineer</li>
-                <li>Sensor Fusion</li>
-            </ul>
-        </section>
-        <section id="summary">
-            <h2>Summary</h2>
-            <p>
-                Robotics & AI Engineer with expertise in AI, ML, and RL for Cyber-Physical Systems. 
-                Proficient in Python, C++, Docker, Kubernetes, PyTorch, and JavaScript.
-            </p>
-        </section>
-        <section id="experience">
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-4">
             <h2>Experience</h2>
-            <h3>Energy Research Institute @ NTU</h3>
-            <p>Research Associate | June 2024 - Present | Singapore</p>
-            <p>AI and ML-based forecasting, RL for energy optimization, predictive maintenance, and model predictive controller design.</p>
-            <h3>Nanyang Technological University Singapore</h3>
-            <p>Research Associate | March 2023 - June 2024 | Singapore</p>
-            <p>
-                Projects include Visual Semantic Indoor Positioning System and robust keypoint descriptor 
-                development for challenging scenes in VSLAM.
-            </p>
-            <h3>SUTD</h3>
-            <p>Visiting Research Fellow | March 2022 - January 2023 | Singapore</p>
-            <p>Developed a bi-manual 7DOF arm controller for hospital bed cleaning and other robotics projects.</p>
-            <h3>CSIR-CMERI</h3>
-            <p>Project Associate | October 2020 - March 2022 | Durgapur, India</p>
-            <p>Autonomous navigation, localization, and human tracking for a tracked flipper-type mobile robot.</p>
-            <p>Project Assistant | July 2019 - March 2020 | Durgapur, India</p>
-            <p>Developed ROV technology for underwater inspection and minor intervention.</p>
+            <div class="accordion" id="experienceAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#experience1" aria-expanded="true" aria-controls="experience1">
+                            Energy Research Institute @ NTU (June 2024 - Present)
+                        </button>
+                    </h2>
+                    <div id="experience1" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            AI and ML-based forecasting, RL for energy optimization, predictive maintenance, and model predictive controller design.
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more experiences as accordion items -->
+            </div>
         </section>
-        <section id="education">
+
+        <!-- Education Section -->
+        <section id="education" class="mb-4">
             <h2>Education</h2>
-            <h3>Indian Institute of Information Technology Design & Manufacturing Kancheepuram</h3>
-            <p>Masters, Electronics System Design (2017 - 2019)</p>
-            <h3>Future Institute Of Engineering and Management</h3>
-            <p>Bachelor of Technology - BTech, Electronics and Instrumentation Engineering (2012 - 2016)</p>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong>Indian Institute of Information Technology Design & Manufacturing Kancheepuram</strong><br>
+                    Masters, Electronics System Design (2017 - 2019)
+                </li>
+                <li class="list-group-item">
+                    <strong>Future Institute Of Engineering and Management</strong><br>
+                    Bachelor of Technology - BTech, Electronics and Instrumentation Engineering (2012 - 2016)
+                </li>
+            </ul>
         </section>
     </div>
+
     <footer>
         <p>&copy; 2024 Badal Kumar. All Rights Reserved.</p>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button class="btn btn-primary btn-back-to-top">Back to Top</button>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Show/hide back-to-top button
+        const backToTopButton = document.querySelector('.btn-back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        // Scroll to top on button click
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
